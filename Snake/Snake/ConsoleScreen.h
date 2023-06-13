@@ -14,7 +14,7 @@ public:
 
     void Clear();
 
-    int4 ScreenScale()
+    int4 ScreenScale() 
     {
         return Scale;
     }

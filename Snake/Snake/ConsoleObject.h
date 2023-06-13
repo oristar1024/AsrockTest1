@@ -6,12 +6,12 @@
 class ConsoleObject
 {
 public:
-    virtual ~ConsoleObject()
+    virtual ~ConsoleObject() 
     {
 
     }
 
-    char GetChar()
+    char GetChar() 
     {
         return RenderChar;
     }
@@ -31,7 +31,7 @@ public:
         Pos += _Pos;
     }
 
-    void SetPos(const int4& _Pos)
+    void SetPos(const int4& _Pos) 
     {
         Pos = _Pos;
     }
@@ -46,7 +46,7 @@ public:
         IsActiveValue = false;
     }
 
-    bool IsActive()
+    bool IsActive() 
     {
         return IsActiveValue;
     }
