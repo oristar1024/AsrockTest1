@@ -11,8 +11,8 @@ int main()
     _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
     srand(time(0));
-    const int SizeX = 10;
-    const int SizeY = 5;
+    const int SizeX = 4;
+    const int SizeY = 4;
 
     int Bx = rand() % SizeX;
     int By = rand() % SizeY;

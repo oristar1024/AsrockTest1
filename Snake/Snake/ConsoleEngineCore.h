@@ -16,7 +16,7 @@ public:
 	ConsoleEngineCore& operator=(const ConsoleEngineCore& _Other) = delete;
 	ConsoleEngineCore& operator=(ConsoleEngineCore&& _Other) noexcept = delete;
 
-	static void EngineOff() 
+	static void EngineOff()
 	{
 		IsEngineProcess = false;
 	}
@@ -24,7 +24,7 @@ public:
 	static void EngineStart(const int4& Scale);
 
 	template<typename ObjectType>
-	static ObjectType* CreateObject() 
+	static ObjectType* CreateObject()
 	{
 		ObjectType* NewObject = new ObjectType();
 		Objects.push_back(NewObject);
@@ -32,6 +32,11 @@ public:
 	}
 
 	static ConsoleScreen Screen;
+
+	static std::list<ConsoleObject*> GetObjects()
+	{
+		return Objects;
+	}
 
 	static void DeleteAll();
 

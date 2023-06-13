@@ -36,7 +36,7 @@ public:
     bool operator==(const int4& _Other)
     {
         return X == _Other.X &&
-        Y == _Other.Y;
+            Y == _Other.Y;
     }
 
 

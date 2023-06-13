@@ -6,16 +6,16 @@ std::list<ConsoleObject*> ConsoleEngineCore::Objects;
 ConsoleScreen ConsoleEngineCore::Screen;
 
 
-ConsoleEngineCore::ConsoleEngineCore() 
+ConsoleEngineCore::ConsoleEngineCore()
 {
 }
 
-ConsoleEngineCore::~ConsoleEngineCore() 
+ConsoleEngineCore::~ConsoleEngineCore()
 {
 }
 
 
-void ConsoleEngineCore::EngineStart(const int4& _Scale) 
+void ConsoleEngineCore::EngineStart(const int4& _Scale)
 {
 
 	Screen.Init(_Scale, '*');

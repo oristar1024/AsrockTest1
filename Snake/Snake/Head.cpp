@@ -65,6 +65,7 @@ void Head::Tick(float _Time)
     
     if (body->GetPos() == GetPos()) 
     {
+        AddPart();
         int4 Scale = ConsoleEngineCore::Screen.ScreenScale();
         int Bx = rand() % Scale.X;
         int By = rand() % Scale.Y;
@@ -97,7 +98,6 @@ void Head::Tick(float _Time)
         }
 
         body->SetPos({ Bx, By });
-        AddPart();
     }
 
 }

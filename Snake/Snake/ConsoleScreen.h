@@ -14,12 +14,12 @@ public:
 
     void Clear();
 
-    bool IsScreenOut(const int4& _Pos) const;
-
     int4 ScreenScale()
     {
         return Scale;
     }
+
+    bool IsScreenOut(const int4& _Pos) const;
 
     void Print() const;
 
